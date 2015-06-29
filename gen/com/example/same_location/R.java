@@ -64,55 +64,60 @@ public final class R {
         public static final int margin_8=0x7f060008;
     }
     public static final class drawable {
-        public static final int bottom_find=0x7f020000;
-        public static final int bottom_index=0x7f020001;
-        public static final int bottom_mine=0x7f020002;
-        public static final int bottom_tab_fx=0x7f020003;
-        public static final int bottom_tab_fx_on=0x7f020004;
-        public static final int bottom_tab_gc=0x7f020005;
-        public static final int bottom_tab_gc_on=0x7f020006;
-        public static final int bottom_tab_wd=0x7f020007;
-        public static final int bottom_tab_wd_on=0x7f020008;
-        public static final int bottom_tab_xx=0x7f020009;
-        public static final int bottom_tab_xx_on=0x7f02000a;
-        public static final int bottom_txtcolor=0x7f02000b;
-        public static final int headset=0x7f02000c;
-        public static final int ic_launcher=0x7f02000d;
-        public static final int logo_top=0x7f02000e;
-        public static final int right=0x7f02000f;
-        public static final int top_more=0x7f020010;
+        public static final int anima=0x7f020000;
+        public static final int bottom_find=0x7f020001;
+        public static final int bottom_index=0x7f020002;
+        public static final int bottom_mine=0x7f020003;
+        public static final int bottom_tab_fx=0x7f020004;
+        public static final int bottom_tab_fx_on=0x7f020005;
+        public static final int bottom_tab_gc=0x7f020006;
+        public static final int bottom_tab_gc_on=0x7f020007;
+        public static final int bottom_tab_wd=0x7f020008;
+        public static final int bottom_tab_wd_on=0x7f020009;
+        public static final int bottom_tab_xx=0x7f02000a;
+        public static final int bottom_tab_xx_on=0x7f02000b;
+        public static final int bottom_txtcolor=0x7f02000c;
+        public static final int headset=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int logo_top=0x7f02000f;
+        public static final int right=0x7f020010;
+        public static final int top_more=0x7f020011;
     }
     public static final class id {
-        public static final int ActivityContent=0x7f0a0002;
-        public static final int ActivityListView=0x7f0a0000;
-        public static final int action_settings=0x7f0a000c;
-        public static final int activity_image=0x7f0a0007;
-        public static final int activity_number=0x7f0a0009;
-        public static final int activity_situation=0x7f0a000a;
-        public static final int activity_title=0x7f0a0008;
-        public static final int autoCompleteTextView1=0x7f0a0001;
-        public static final int flipper=0x7f0a000b;
-        public static final int llytBotton=0x7f0a0003;
-        public static final int rdoBtnFind=0x7f0a0005;
-        public static final int rdoBtnIndex=0x7f0a0004;
-        public static final int rdoBtnMine=0x7f0a0006;
+        public static final int ActivityContent=0x7f0a0003;
+        public static final int ActivityListView=0x7f0a0001;
+        public static final int action_settings=0x7f0a000d;
+        public static final int activity_image=0x7f0a0008;
+        public static final int activity_number=0x7f0a000a;
+        public static final int activity_situation=0x7f0a000b;
+        public static final int activity_title=0x7f0a0009;
+        public static final int autoCompleteTextView1=0x7f0a0002;
+        public static final int flipper=0x7f0a000c;
+        public static final int ivAnima=0x7f0a0000;
+        public static final int llytBotton=0x7f0a0004;
+        public static final int rdoBtnFind=0x7f0a0006;
+        public static final int rdoBtnIndex=0x7f0a0005;
+        public static final int rdoBtnMine=0x7f0a0007;
     }
     public static final class layout {
-        public static final int activity_find=0x7f030000;
-        public static final int activity_index=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int activity_mine=0x7f030003;
-        public static final int autocomplete_index=0x7f030004;
-        public static final int iteam_activitylistview=0x7f030005;
-        public static final int viewflipper_index=0x7f030006;
+        public static final int activity_anim=0x7f030000;
+        public static final int activity_find=0x7f030001;
+        public static final int activity_index=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_mine=0x7f030004;
+        public static final int autocomplete_index=0x7f030005;
+        public static final int iteam_activitylistview=0x7f030006;
+        public static final int viewflipper_index=0x7f030007;
     }
     public static final class menu {
-        public static final int main=0x7f090000;
+        public static final int anim=0x7f090000;
+        public static final int main=0x7f090001;
     }
     public static final class string {
         public static final int action_settings=0x7f070003;
         public static final int app_name=0x7f070000;
         public static final int hello_world=0x7f070002;
+        public static final int title_activity_anim=0x7f070007;
         public static final int title_activity_find=0x7f070005;
         public static final int title_activity_index=0x7f070004;
         public static final int title_activity_mine=0x7f070006;

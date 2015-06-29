@@ -8,5 +8,6 @@
     <string name="title_activity_index">IndexActi</string>
     <string name="title_activity_find">FindActivity</string>
     <string name="title_activity_mine">MineActivity</string>
+    <string name="title_activity_anim">MainActivity</string>
 
 </resources>
