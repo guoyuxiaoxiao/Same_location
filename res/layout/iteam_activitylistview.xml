@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" 
+    android:paddingTop="3sp"
+     >
+
+    <ImageView
+        android:id="@+id/activity_image"
+        android:layout_width="match_parent"
+        android:layout_height="160sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+ 
+	<TextView
+	    android:id="@+id/activity_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/activity_image"
+	    android:gravity="center"
+	    android:text="title"
+	    android:textSize="23sp"
+	    
+	     />
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/activity_title"
+	    android:orientation="horizontal" >
+
+	    <TextView
+	        android:id="@+id/activity_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10sp"
+	        android:text="number" />
+
+	    <TextView
+	        android:id="@+id/activity_situation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="5sp"
+			android:layout_marginBottom="3sp"
+			android:background="#F2F2F2"
+	        android:text="参与中" />
+
+	</RelativeLayout>
+	
+</RelativeLayout>

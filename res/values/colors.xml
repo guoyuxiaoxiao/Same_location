@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 新增配置 -->
+    <color name="btn_orange">#ff6600</color>
+    <color name="include_title">#ff5a00</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <!-- 灰色分割线 -->
+    <color name="bottom_div_color">#d2d2d2</color>
+    
+</resources>
