@@ -77,11 +77,12 @@ public final class R {
         public static final int bottom_tab_xx=0x7f02000a;
         public static final int bottom_tab_xx_on=0x7f02000b;
         public static final int bottom_txtcolor=0x7f02000c;
-        public static final int headset=0x7f02000d;
-        public static final int ic_launcher=0x7f02000e;
-        public static final int logo_top=0x7f02000f;
-        public static final int right=0x7f020010;
-        public static final int top_more=0x7f020011;
+        public static final int cofuns=0x7f02000d;
+        public static final int headset=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int logo_top=0x7f020010;
+        public static final int right=0x7f020011;
+        public static final int top_more=0x7f020012;
     }
     public static final class id {
         public static final int ActivityContent=0x7f0a0003;

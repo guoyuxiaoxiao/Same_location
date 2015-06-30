@@ -3,6 +3,7 @@ package com.example.same_location;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import com.example.same_location.base.BaseActivity;
 import com.lidroid.xutils.view.annotation.ContentView;
 
 import android.app.Activity;
@@ -11,14 +12,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+public class AnimeActivity extends BaseActivity{
 
-public class AnimeActivity extends Activity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_anim);
 		
+		setContentView(R.layout.activity_anim);
 		final Intent intent = new Intent();
 		Timer timer = new Timer();
 		TimerTask task  =new TimerTask() {
