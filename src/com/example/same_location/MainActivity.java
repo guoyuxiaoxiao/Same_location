@@ -5,6 +5,7 @@ import com.example.same_location.fragment.FindFragment;
 import com.example.same_location.fragment.IndexFragment;
 import com.example.same_location.fragment.MineFragment;
 import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.util.LogUtils;
 import com.lidroid.xutils.view.annotation.ContentView;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;
@@ -34,8 +35,18 @@ public class MainActivity extends BaseActivity {
 		ViewUtils.inject(this);
 
 		initView();
+		initDate();
 	}
 
+	/**
+	 * 初始化数据
+	 */
+	private void initDate(){
+		Bundle bundle = this.getIntent().getExtras();  
+		String cityname = bundle.getString("CityName"); 
+		fragment.setArguments(bundle);
+	}
+	
 	private void initView() {
 		fgManager = getSupportFragmentManager();
 		fragment = new IndexFragment();

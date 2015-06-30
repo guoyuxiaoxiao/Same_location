@@ -84,6 +84,11 @@ public class IndexFragment extends BaseFragment{
 	 * 
 	 */
 	private void initDatas() {
+		
+		Bundle bundle = this.getArguments();
+		String cityname = bundle.getString("CityName"); 
+		LogUtils.d(cityname);
+		
 		List<Index_activityBean> index_activityBeans = new ArrayList<Index_activityBean>();
 		for (int i = 0; i < 20; i++) {
 			index_activityBeans.add(new Index_activityBean(R.drawable.headset, "厦门大学学生公寓"+i, "55"+i));

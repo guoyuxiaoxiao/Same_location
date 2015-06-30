@@ -37,6 +37,7 @@ public class CityLocation {
 		this.context = context;
 		this.handler = handler;
 		gpsLocation = new GPSLocation(context);
+		gpsLocation.startLocation();
 		getCityName();
 	}
 
@@ -60,7 +61,8 @@ public class CityLocation {
 				Log.i("location", CityName);
 				Message message = new Message();
 				message.what = 1;
-				handler.sendMessage(message);
+				if(handler!=null)
+					handler.sendMessage(message);
 			}
 		});
 	}

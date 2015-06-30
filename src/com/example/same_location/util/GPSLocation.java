@@ -1,6 +1,6 @@
 package com.example.same_location.util;
 
-
+import android.R.bool;
 import android.app.PendingIntent;
 import android.app.PendingIntent.CanceledException;
 import android.content.Context;
@@ -42,6 +42,10 @@ public class GPSLocation {
 		updateToNewLocation(location);
 		/** 服务管理对象的监听器 */
 		// 参数1：定位的方式 参数2：监听更新间隔时间(ms) 参数3：监听更新的距离(m) 参数4：监听的方法
+
+	}
+
+	public void startLocation() {
 		locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER,
 				2000, 10, new LocationListener() {
 					public void onStatusChanged(String provider, int status,
@@ -71,16 +75,12 @@ public class GPSLocation {
 		}
 	}
 
-	
-	
 	// 此段代码是得到当前GPS的状态 （开启 true 关闭 false）
-	public boolean isGPSEnable(Context context) {
-
-		String str = Settings.Secure.getString(context.getContentResolver(),
-				Settings.Secure.LOCATION_PROVIDERS_ALLOWED);
-		Log.v("GPS", str);
-		if (str != null) {
-			return str.contains("gps");
+	public boolean isGpsOpen() {
+		LocationManager alm = (LocationManager) context
+				.getSystemService(Context.LOCATION_SERVICE);
+		if (alm.isProviderEnabled(android.location.LocationManager.GPS_PROVIDER)) {
+			return true;
 		} else {
 			return false;
 		}
