@@ -32,6 +32,7 @@ public class IndexActivityAdapter extends BaseListAdapter<Index_activityBean>{
 		ImageView imageView = ViewHolder.get(convertView,R.id.activity_image);
 		TextView titleTextView= ViewHolder.get(convertView, R.id.activity_title);
 		TextView numberTextView = ViewHolder.get(convertView, R.id.activity_number);
+		TextView contentTextView = ViewHolder.get(convertView, R.id.activity_content);
 		Index_activityBean index_activityBean = list.get(position);
 		imageView.setImageResource(index_activityBean.ActivityImageResid);
 		titleTextView.setText(index_activityBean.Activitytitle);

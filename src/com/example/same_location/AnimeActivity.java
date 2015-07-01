@@ -67,7 +67,7 @@ public class AnimeActivity extends Activity {
 			@Override
 			public void run() {
 				// 如果gps开启，则跳转否则关闭程序
-				if (flag) {
+				//if (flag) {
 					Intent intent = new Intent();
 					intent.setClass(AnimeActivity.this, MainActivity.class);
 					Bundle bundle = new Bundle();
@@ -75,12 +75,12 @@ public class AnimeActivity extends Activity {
 					intent.putExtras(bundle);
 					AnimeActivity.this.startActivity(intent);
 					finish();
-				} else {
+				/*} else {
 					Message message = new Message();
 					message.what = 1;
 					handler.sendMessage(message);
 					// android.os.Process.killProcess(android.os.Process.myPid());
-				}
+				}*/
 				// finish();
 			}
 		};
