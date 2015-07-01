@@ -5,7 +5,21 @@
     <color name="btn_orange">#ff6600</color>
     <color name="include_title">#ff5a00</color>
     <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="light_blue">#15e2dd</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="black">#F0000000</color>
     <!-- 灰色分割线 -->
     <color name="bottom_div_color">#d2d2d2</color>
-    
+    <!-- 灰色 -->
+    <color name="gray">#BFBFBF</color>
+    <!-- 深灰色 -->
+    <color name="darkgray">#999999</color>
+    <!-- 背景灰色 -->
+    <color name="bggray">#f3f3f3</color>
+    <!-- 红色 -->
+    <color name="reds">#E81F18</color>
+    <!--字体灰色  -->
+    <color name="fontgray">#b4b4b4</color>
 </resources>

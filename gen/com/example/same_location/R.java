@@ -18,13 +18,35 @@ public final class R {
     }
     public static final class color {
         public static final int base_color_text_gray=0x7f050002;
+        /**  背景灰色 
+         */
+        public static final int bggray=0x7f050009;
+        /**  黑色 
+         */
+        public static final int black=0x7f050005;
         /**  灰色分割线 
          */
-        public static final int bottom_div_color=0x7f050003;
+        public static final int bottom_div_color=0x7f050006;
         /**  新增配置 
          */
         public static final int btn_orange=0x7f050000;
+        /**  深灰色 
+         */
+        public static final int darkgray=0x7f050008;
+        /** 字体灰色  
+         */
+        public static final int fontgray=0x7f05000b;
+        /**  灰色 
+         */
+        public static final int gray=0x7f050007;
         public static final int include_title=0x7f050001;
+        public static final int light_blue=0x7f050003;
+        /**  红色 
+         */
+        public static final int reds=0x7f05000a;
+        /**  白色 
+         */
+        public static final int white=0x7f050004;
     }
     public static final class dimen {
         /** 
@@ -65,35 +87,34 @@ public final class R {
     }
     public static final class drawable {
         public static final int anima=0x7f020000;
-        public static final int bottom_find=0x7f020001;
-        public static final int bottom_index=0x7f020002;
-        public static final int bottom_mine=0x7f020003;
-        public static final int bottom_tab_fx=0x7f020004;
-        public static final int bottom_tab_fx_on=0x7f020005;
-        public static final int bottom_tab_gc=0x7f020006;
-        public static final int bottom_tab_gc_on=0x7f020007;
-        public static final int bottom_tab_wd=0x7f020008;
-        public static final int bottom_tab_wd_on=0x7f020009;
-        public static final int bottom_tab_xx=0x7f02000a;
-        public static final int bottom_tab_xx_on=0x7f02000b;
-        public static final int bottom_txtcolor=0x7f02000c;
-        public static final int cofuns=0x7f02000d;
-        public static final int headset=0x7f02000e;
-        public static final int ic_launcher=0x7f02000f;
-        public static final int logo_top=0x7f020010;
-        public static final int right=0x7f020011;
-        public static final int top_more=0x7f020012;
+        public static final int border=0x7f020001;
+        public static final int bottom_find=0x7f020002;
+        public static final int bottom_index=0x7f020003;
+        public static final int bottom_mine=0x7f020004;
+        public static final int bottom_tab_fx=0x7f020005;
+        public static final int bottom_tab_fx_on=0x7f020006;
+        public static final int bottom_tab_gc=0x7f020007;
+        public static final int bottom_tab_gc_on=0x7f020008;
+        public static final int bottom_tab_wd=0x7f020009;
+        public static final int bottom_tab_wd_on=0x7f02000a;
+        public static final int bottom_tab_xx=0x7f02000b;
+        public static final int bottom_tab_xx_on=0x7f02000c;
+        public static final int bottom_txtcolor=0x7f02000d;
+        public static final int cofuns=0x7f02000e;
+        public static final int headset=0x7f02000f;
+        public static final int ic_launcher=0x7f020010;
+        public static final int logo_top=0x7f020011;
+        public static final int right=0x7f020012;
+        public static final int top_more=0x7f020013;
     }
     public static final class id {
         public static final int ActivityContent=0x7f0a0003;
         public static final int ActivityListView=0x7f0a0001;
-        public static final int action_settings=0x7f0a000d;
-        public static final int activity_image=0x7f0a0008;
-        public static final int activity_number=0x7f0a000a;
-        public static final int activity_situation=0x7f0a000b;
-        public static final int activity_title=0x7f0a0009;
+        public static final int action_settings=0x7f0a000b;
+        public static final int activity_image=0x7f0a0009;
+        public static final int activity_title=0x7f0a0008;
         public static final int autoCompleteTextView1=0x7f0a0002;
-        public static final int flipper=0x7f0a000c;
+        public static final int flipper=0x7f0a000a;
         public static final int ivAnima=0x7f0a0000;
         public static final int llytBotton=0x7f0a0004;
         public static final int rdoBtnFind=0x7f0a0006;
