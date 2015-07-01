@@ -2,35 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:completionThreshold="1"
-        android:ems="10"
-        >
-    </AutoCompleteTextView>
-	 <FrameLayout
-        android:id="@+id/ActivityContent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/llytBotton" 
-        android:layout_marginTop="30sp"
-        >
-
-	     
-
-	 </FrameLayout>
 	 <LinearLayout
         android:id="@+id/llytBotton"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_alignParentBottom="true"
         android:background="@android:color/white"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+        >
+        
          <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -40,7 +20,7 @@
                 android:id="@+id/rdoBtnIndex"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.33"
                 android:button="@null"
                 android:checked="true"
                 android:drawableTop="@drawable/bottom_index"
@@ -55,7 +35,7 @@
                 android:id="@+id/rdoBtnFind"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.33"
                 android:button="@null"
                 android:drawableTop="@drawable/bottom_find"
                 android:gravity="center"
@@ -69,7 +49,7 @@
                 android:id="@+id/rdoBtnMine"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.33"
                 android:button="@null"
                 android:drawableTop="@drawable/bottom_mine"
                 android:gravity="center"
@@ -81,5 +61,41 @@
 	     
 	     
         </LinearLayout>
+
+	 <FrameLayout
+	     android:id="@+id/ActivityContent"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:layout_alignParentLeft="true"
+	     android:layout_alignParentTop="true" >
+
+	     <RelativeLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="48dp"
+	         android:layout_alignParentLeft="true"
+	         android:orientation="horizontal" 
+	         android:id="@+id/headMain"
+	         >
+
+	         <Button
+	             android:id="@+id/Btnchangecity"
+	             android:layout_width="wrap_content"
+	             android:layout_height="5sp"
+	             android:layout_alignBottom="@+id/activity_pagetitle"
+	             android:layout_alignParentRight="true"
+	             android:layout_alignTop="@id/activity_pagetitle"
+	             android:text="跳转" />
+
+	         <TextView
+	             android:id="@+id/activity_pagetitle"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_centerHorizontal="true"
+	             android:layout_centerVertical="true"
+	             android:paddingTop="5sp"
+	             android:text="标题"
+	             android:textAppearance="?android:attr/textAppearanceLarge" />
+	     </RelativeLayout>
+	 </FrameLayout>
 
 </RelativeLayout>

@@ -10,6 +10,7 @@ import com.lidroid.xutils.view.annotation.ContentView;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -72,6 +73,12 @@ public class MainActivity extends BaseActivity {
 		case R.id.rdoBtnMine: {// 我的模块
 			switchContent(fragment, new MineFragment(), "mineLPai");
 			autoCompleteTextView.setVisibility(View.GONE);
+			break;
+		}
+		case R.id.Btnchangecity: {// 城市输入模块
+			Intent intent = new Intent();
+			intent.setClass(MainActivity.this, CityChangeActivity.class);
+			startActivityForResult(intent, 0);
 			break;
 		}
 		}
