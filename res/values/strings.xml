@@ -9,5 +9,6 @@
     <string name="title_activity_find">FindActivity</string>
     <string name="title_activity_mine">MineActivity</string>
     <string name="title_activity_anim">MainActivity</string>
+    <string name="title_activity_city_change">CityChangeActivity</string>
 
 </resources>

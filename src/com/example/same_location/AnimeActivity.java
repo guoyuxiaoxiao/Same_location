@@ -4,6 +4,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import com.example.same_location.base.BaseActivity;
+import com.example.same_location.staticdata.CityName;
 import com.example.same_location.util.CityLocation;
 import com.example.same_location.util.GPSLocation;
 import com.lidroid.xutils.util.LogUtils;
@@ -67,20 +68,24 @@ public class AnimeActivity extends Activity {
 			@Override
 			public void run() {
 				// 如果gps开启，则跳转否则关闭程序
-				//if (flag) {
+				if (flag) {
 					Intent intent = new Intent();
 					intent.setClass(AnimeActivity.this, MainActivity.class);
 					Bundle bundle = new Bundle();
-					bundle.putString("CityName", cityLocation.CityName); // 压入数据
-					intent.putExtras(bundle);
+					String name = cityLocation.CityName;
+					if("".equals(name))
+						name ="厦门市";
+				/*	bundle.putString("CityName", name); // 压入数据
+					intent.putExtras(bundle);*/
+					CityName.CITYNAME = name;
 					AnimeActivity.this.startActivity(intent);
 					finish();
-				/*} else {
+				}else {
 					Message message = new Message();
 					message.what = 1;
 					handler.sendMessage(message);
 					// android.os.Process.killProcess(android.os.Process.myPid());
-				}*/
+				 }
 				// finish();
 			}
 		};

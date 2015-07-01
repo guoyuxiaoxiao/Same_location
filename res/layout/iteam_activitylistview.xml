@@ -59,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginTop="150dp" >
 
         <View
@@ -73,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="160dp"
+        android:paddingLeft="5dp"
         android:paddingTop="10dp" >
 
         <TextView

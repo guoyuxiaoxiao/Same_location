@@ -18,17 +18,17 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200sp"
-            android:background="@drawable/bottom_find" />
+            android:background="@drawable/flow_first" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200sp"
-            android:background="@drawable/bottom_index" />
+            android:background="@drawable/flow_second" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200sp"
-            android:background="@drawable/bottom_mine" />
+            android:background="@drawable/flow_third" />
     </ViewFlipper>
 
 </RelativeLayout>

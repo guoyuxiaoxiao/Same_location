@@ -10,6 +10,7 @@ import com.lidroid.xutils.view.annotation.ContentView;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -25,6 +26,7 @@ public class MainActivity extends BaseActivity {
 	private AutoCompleteTextView autoCompleteTextView;
 	@ViewInject(R.id.rdoBtnIndex)
 	private RadioButton rdoBtnIndex;
+	
 	private FragmentManager fgManager;
 	private Fragment fragment;
 
@@ -42,9 +44,9 @@ public class MainActivity extends BaseActivity {
 	 * 初始化数据
 	 */
 	private void initDate(){
-		Bundle bundle = this.getIntent().getExtras();  
+		/*Bundle bundle = this.getIntent().getExtras();  
 		String cityname = bundle.getString("CityName"); 
-		fragment.setArguments(bundle);
+		fragment.setArguments(bundle);*/
 	}
 	
 	private void initView() {
@@ -54,24 +56,27 @@ public class MainActivity extends BaseActivity {
 		rdoBtnIndex.performClick();
 	}
 
-	@OnClick({ R.id.rdoBtnIndex, R.id.rdoBtnFind, R.id.rdoBtnMine, })
+	@OnClick({ R.id.rdoBtnIndex, R.id.rdoBtnFind, R.id.rdoBtnMine,R.id.Btnchangecity})
 	public void onClick(View v) {
 
 		switch (v.getId()) {
 		case R.id.rdoBtnIndex: {// 首页模块
-			autoCompleteTextView.setVisibility(View.VISIBLE);
 			switchContent(fragment, new IndexFragment(), "home");
 			break;
 		}
 		case R.id.rdoBtnFind: {// 发现模块
-			autoCompleteTextView.setVisibility(View.VISIBLE);
 			switchContent(fragment, new FindFragment(),
 					"goodsCategory");
 			break;
 		}
 		case R.id.rdoBtnMine: {// 我的模块
 			switchContent(fragment, new MineFragment(), "mineLPai");
-			autoCompleteTextView.setVisibility(View.GONE);
+			break;
+		}
+		case R.id.Btnchangecity: {// 城市输入模块
+			Intent intent = new Intent();
+			intent.setClass(MainActivity.this, CityChangeActivity.class);
+			startActivityForResult(intent, 0);
 			break;
 		}
 		}

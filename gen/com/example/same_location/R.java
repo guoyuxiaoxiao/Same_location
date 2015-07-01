@@ -101,27 +101,34 @@ public final class R {
         public static final int bottom_tab_xx_on=0x7f02000c;
         public static final int bottom_txtcolor=0x7f02000d;
         public static final int cofuns=0x7f02000e;
-        public static final int headset=0x7f02000f;
-        public static final int ic_launcher=0x7f020010;
-        public static final int logo_top=0x7f020011;
-        public static final int right=0x7f020012;
-        public static final int top_more=0x7f020013;
+        public static final int flow_first=0x7f02000f;
+        public static final int flow_second=0x7f020010;
+        public static final int flow_third=0x7f020011;
+        public static final int headset=0x7f020012;
+        public static final int ic_launcher=0x7f020013;
+        public static final int logo_top=0x7f020014;
+        public static final int right=0x7f020015;
+        public static final int top_more=0x7f020016;
     }
     public static final class id {
-        public static final int ActivityContent=0x7f0a0003;
+        public static final int ActivityContent=0x7f0a0006;
         public static final int ActivityListView=0x7f0a0001;
-        public static final int action_settings=0x7f0a000d;
-        public static final int activity_content=0x7f0a000a;
-        public static final int activity_image=0x7f0a0009;
-        public static final int activity_number=0x7f0a000b;
-        public static final int activity_title=0x7f0a0008;
-        public static final int autoCompleteTextView1=0x7f0a0002;
-        public static final int flipper=0x7f0a000c;
+        public static final int Btnchangecity=0x7f0a0008;
+        public static final int action_settings=0x7f0a0011;
+        public static final int activity_content=0x7f0a000e;
+        public static final int activity_image=0x7f0a000d;
+        public static final int activity_number=0x7f0a000f;
+        public static final int activity_pagetitle=0x7f0a0009;
+        public static final int activity_title=0x7f0a000c;
+        public static final int autoCompleteTextView1=0x7f0a000b;
+        public static final int confirm=0x7f0a000a;
+        public static final int flipper=0x7f0a0010;
+        public static final int headMain=0x7f0a0007;
         public static final int ivAnima=0x7f0a0000;
-        public static final int llytBotton=0x7f0a0004;
-        public static final int rdoBtnFind=0x7f0a0006;
-        public static final int rdoBtnIndex=0x7f0a0005;
-        public static final int rdoBtnMine=0x7f0a0007;
+        public static final int llytBotton=0x7f0a0002;
+        public static final int rdoBtnFind=0x7f0a0004;
+        public static final int rdoBtnIndex=0x7f0a0003;
+        public static final int rdoBtnMine=0x7f0a0005;
     }
     public static final class layout {
         public static final int activity_anim=0x7f030000;
@@ -135,13 +142,15 @@ public final class R {
     }
     public static final class menu {
         public static final int anim=0x7f090000;
-        public static final int main=0x7f090001;
+        public static final int city_change=0x7f090001;
+        public static final int main=0x7f090002;
     }
     public static final class string {
         public static final int action_settings=0x7f070003;
         public static final int app_name=0x7f070000;
         public static final int hello_world=0x7f070002;
         public static final int title_activity_anim=0x7f070007;
+        public static final int title_activity_city_change=0x7f070008;
         public static final int title_activity_find=0x7f070005;
         public static final int title_activity_index=0x7f070004;
         public static final int title_activity_mine=0x7f070006;

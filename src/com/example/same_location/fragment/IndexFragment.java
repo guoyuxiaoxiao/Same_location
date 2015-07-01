@@ -8,6 +8,7 @@ import com.example.same_locaiton.bean.Index_activityBean;
 import com.example.same_location.R;
 import com.example.same_location.adapter.IndexActivityAdapter;
 import com.example.same_location.base.BaseFragment;
+import com.example.same_location.staticdata.CityName;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.util.LogUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -28,6 +29,8 @@ import android.widget.ListView;
  * **/
 public class IndexFragment extends BaseFragment{
 	
+	
+	private String cityname="";
 	@ViewInject(R.id.ActivityListView)
 	private ListView activityListView;
 	
@@ -65,8 +68,6 @@ public class IndexFragment extends BaseFragment{
 	public void initViews() {
 		
 		
-		/*View autoComple = View.inflate(this.getActivity(), R.layout.autocomplete_index, null);
-		activityListView.addHeaderView(autoComple);*/
 		View flipper= View.inflate(this.getActivity(), R.layout.viewflipper_index,null);
 		activityListView.addHeaderView(flipper);
 	}
@@ -85,9 +86,7 @@ public class IndexFragment extends BaseFragment{
 	 */
 	private void initDatas() {
 		
-		Bundle bundle = this.getArguments();
-		String cityname = bundle.getString("CityName"); 
-		LogUtils.d(cityname);
+		cityname  = CityName.CITYNAME;
 		
 		List<Index_activityBean> index_activityBeans = new ArrayList<Index_activityBean>();
 		for (int i = 0; i < 20; i++) {
