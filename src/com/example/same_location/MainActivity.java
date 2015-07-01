@@ -4,6 +4,7 @@ import com.example.same_location.base.BaseActivity;
 import com.example.same_location.fragment.FindFragment;
 import com.example.same_location.fragment.IndexFragment;
 import com.example.same_location.fragment.MineFragment;
+import com.example.same_location.staticdata.CityName;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.util.LogUtils;
 import com.lidroid.xutils.view.annotation.ContentView;
@@ -18,6 +19,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 @ContentView(R.layout.activity_main)
 public class MainActivity extends BaseActivity {
@@ -29,7 +31,7 @@ public class MainActivity extends BaseActivity {
 	
 	private FragmentManager fgManager;
 	private Fragment fragment;
-
+    private String cityname="";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,11 +46,11 @@ public class MainActivity extends BaseActivity {
 	 * 初始化数据
 	 */
 	private void initDate(){
-		/*Bundle bundle = this.getIntent().getExtras();  
-		String cityname = bundle.getString("CityName"); 
-		fragment.setArguments(bundle);*/
+		cityname = CityName.CITYNAME;
+		TextView tv=(TextView)findViewById(R.id.activity_pagetitle);
+		tv.setText(CityName.CITYNAME);
 	}
-	
+
 	private void initView() {
 		fgManager = getSupportFragmentManager();
 		fragment = new IndexFragment();
@@ -62,15 +64,21 @@ public class MainActivity extends BaseActivity {
 		switch (v.getId()) {
 		case R.id.rdoBtnIndex: {// 首页模块
 			switchContent(fragment, new IndexFragment(), "home");
+			TextView tv=(TextView)findViewById(R.id.activity_pagetitle);
+			tv.setText(CityName.CITYNAME);
 			break;
 		}
 		case R.id.rdoBtnFind: {// 发现模块
 			switchContent(fragment, new FindFragment(),
 					"goodsCategory");
+			TextView tv=(TextView)findViewById(R.id.activity_pagetitle);
+			tv.setText(CityName.CITYNAME);
 			break;
 		}
 		case R.id.rdoBtnMine: {// 我的模块
 			switchContent(fragment, new MineFragment(), "mineLPai");
+			TextView tv=(TextView)findViewById(R.id.activity_pagetitle);
+			tv.setText("个人信息");
 			break;
 		}
 		case R.id.Btnchangecity: {// 城市输入模块

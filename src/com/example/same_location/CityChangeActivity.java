@@ -1,5 +1,7 @@
 package com.example.same_location;
 
+import com.example.same_location.staticdata.CityName;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class CityChangeActivity extends Activity {
 	private Button btnClose;
@@ -72,13 +75,9 @@ public class CityChangeActivity extends Activity {
 		btnClose.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent=new Intent();
-				Bundle bundle = new Bundle();
-				bundle.putString("city", autoTextView.getText().toString());
-				intent.putExtras(bundle);
-				intent = new Intent(CityChangeActivity.this, MainActivity.class);
+				CityName.CITYNAME=autoTextView.getText().toString();
+				//System.out.println(CityName.CITYNAME);
 				//System.out.println(autoTextView.getText().toString());
-				setResult(15, intent); 
 				finish();
 			}
 		});
