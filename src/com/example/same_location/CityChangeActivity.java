@@ -76,6 +76,10 @@ public class CityChangeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				CityName.CITYNAME=autoTextView.getText().toString();
+				Intent intent = new Intent();
+				intent.putExtra("result", autoTextView.getText().toString());
+                setResult(15, intent);// 设置resultCode，onActivityResult()中能获取到
+                finish();
 				//System.out.println(CityName.CITYNAME);
 				//System.out.println(autoTextView.getText().toString());
 				finish();

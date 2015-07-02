@@ -84,10 +84,24 @@ public class MainActivity extends BaseActivity {
 		case R.id.Btnchangecity: {// 城市输入模块
 			Intent intent = new Intent();
 			intent.setClass(MainActivity.this, CityChangeActivity.class);
-			startActivityForResult(intent, 0);
+			startActivityForResult(intent, 1);
 			break;
 		}
 		}
+	}
+	
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+    	//if语句中除了要设定requestCode和跳到第二个页面的requestCode相同以外
+    	//还要设置resultCode和第二个页面跳转回来的resultCode相同
+    	//少一个判断条件就会崩溃
+    	if (requestCode == 1 && resultCode == 15) {
+    		Bundle bundle=data.getExtras();
+    		cityname = bundle.getString("result");
+    		System.out.println(cityname);
+    		}
+    	TextView tv=(TextView)findViewById(R.id.activity_pagetitle);
+		tv.setText(cityname);
 	}
 
 	
