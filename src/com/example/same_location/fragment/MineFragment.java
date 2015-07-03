@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 /**
  * 我的信息
  * **/
@@ -19,7 +20,7 @@ public class MineFragment extends BaseFragment{
 		View view = inflater
 				.inflate(R.layout.activity_mine, container, false);
 		ViewUtils.inject(this, view);
-
+		
 		initViews();
 		initDatas();
 		return view;
