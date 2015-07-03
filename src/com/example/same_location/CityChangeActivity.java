@@ -22,6 +22,7 @@ import android.widget.TextView;
 public class CityChangeActivity extends Activity {
 	
 	
+	
 	private Button btnClose;
 	private AutoCompleteTextView autoTextView;
 	private ArrayAdapter<String> arrayAdapter;
