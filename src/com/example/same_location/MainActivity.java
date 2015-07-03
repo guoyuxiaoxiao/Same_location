@@ -118,6 +118,7 @@ public class MainActivity extends BaseActivity {
 	 * @param to
 	 * @param tag
 	 */
+	
 	public void switchContent(android.support.v4.app.Fragment from,
 			Fragment to, String tag) {
 		if (fragment != to) {
