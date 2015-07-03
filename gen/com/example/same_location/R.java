@@ -108,27 +108,29 @@ public final class R {
         public static final int ic_launcher=0x7f020013;
         public static final int logo_top=0x7f020014;
         public static final int right=0x7f020015;
-        public static final int top_more=0x7f020016;
+        public static final int shape_progress_dialog=0x7f020016;
+        public static final int top_more=0x7f020017;
     }
     public static final class id {
         public static final int ActivityContent=0x7f0a0006;
         public static final int ActivityListView=0x7f0a0001;
         public static final int Btnchangecity=0x7f0a0008;
-        public static final int action_settings=0x7f0a0011;
-        public static final int activity_content=0x7f0a000e;
-        public static final int activity_image=0x7f0a000d;
-        public static final int activity_number=0x7f0a000f;
+        public static final int action_settings=0x7f0a0012;
+        public static final int activity_content=0x7f0a000f;
+        public static final int activity_image=0x7f0a000e;
+        public static final int activity_number=0x7f0a0010;
         public static final int activity_pagetitle=0x7f0a0009;
-        public static final int activity_title=0x7f0a000c;
+        public static final int activity_title=0x7f0a000d;
         public static final int autoCompleteTextView1=0x7f0a000b;
         public static final int confirm=0x7f0a000a;
-        public static final int flipper=0x7f0a0010;
+        public static final int flipper=0x7f0a0011;
         public static final int headMain=0x7f0a0007;
         public static final int ivAnima=0x7f0a0000;
         public static final int llytBotton=0x7f0a0002;
         public static final int rdoBtnFind=0x7f0a0004;
         public static final int rdoBtnIndex=0x7f0a0003;
         public static final int rdoBtnMine=0x7f0a0005;
+        public static final int txv_dialog_progress_content=0x7f0a000c;
     }
     public static final class layout {
         public static final int activity_anim=0x7f030000;
@@ -137,8 +139,9 @@ public final class R {
         public static final int activity_main=0x7f030003;
         public static final int activity_mine=0x7f030004;
         public static final int autocomplete_index=0x7f030005;
-        public static final int iteam_activitylistview=0x7f030006;
-        public static final int viewflipper_index=0x7f030007;
+        public static final int dialog_progress=0x7f030006;
+        public static final int iteam_activitylistview=0x7f030007;
+        public static final int viewflipper_index=0x7f030008;
     }
     public static final class menu {
         public static final int anim=0x7f090000;
@@ -183,5 +186,8 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080001;
+        /**  无黑框背景style 
+         */
+        public static final int Dialog=0x7f080002;
     }
 }
