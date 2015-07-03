@@ -13,7 +13,15 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.TextView;
 
+
+/**
+ * 
+ * @author yui
+ *
+ */
 public class CityChangeActivity extends Activity {
+	
+	
 	private Button btnClose;
 	private AutoCompleteTextView autoTextView;
 	private ArrayAdapter<String> arrayAdapter;

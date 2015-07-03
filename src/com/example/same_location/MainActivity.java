@@ -21,6 +21,11 @@ import android.widget.AutoCompleteTextView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+/**
+ * 首页框架
+ * @author Gy
+ *
+ */
 @ContentView(R.layout.activity_main)
 public class MainActivity extends BaseActivity {
 
@@ -90,6 +95,9 @@ public class MainActivity extends BaseActivity {
 		}
 	}
 	
+	/**
+	 * 接受从城市输入页面返回的城市参数
+	 */
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
     	//if语句中除了要设定requestCode和跳到第二个页面的requestCode相同以外
@@ -104,7 +112,12 @@ public class MainActivity extends BaseActivity {
 		tv.setText(cityname);
 	}
 
-	
+	/**
+	 * fragment页面切换
+	 * @param from
+	 * @param to
+	 * @param tag
+	 */
 	public void switchContent(android.support.v4.app.Fragment from,
 			Fragment to, String tag) {
 		if (fragment != to) {
