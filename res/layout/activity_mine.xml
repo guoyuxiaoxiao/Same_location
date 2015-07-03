@@ -15,4 +15,44 @@
         android:layout_centerInParent="true"
         android:src="@drawable/anima" /> -->
 
+        <RelativeLayout
+            android:id="@+id/mine_mypicture_background"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:background="#E81F18"
+            android:orientation="vertical" >
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mine_buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/mine_mypicture_background"
+            android:background="@android:color/black"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/imageButton1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="@drawable/bottom_mine_myinfo" />
+
+            <Button
+                android:id="@+id/imageButton3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="@drawable/bottom_mine_myactivity" />
+
+            <Button
+                android:id="@+id/imageButton2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="@drawable/bottom_mine_messagesetting" />
+
+        </LinearLayout>
+
 </RelativeLayout>
